@@ -1,13 +1,17 @@
 <h1>Friends Index</h1>
 
+{{#link-to 'index'}}App index{{/link-to}}
 {{#link-to 'friends.new'}}New friend{{/link-to}}
 
 <ul>
   {{#each friend in model}}
     <li>
+    {{! when passing friend obj to #link-to, friend show route model hook is bypassed }}
     {{#link-to 'friends.show' friend}}
-      {{friend.id}} {{friend.first_name}} {{friend.last_name}}
+      {{friend.id}} {{friend.full_name}}
     {{/link-to}}
+    - alternatively:
+    {{link-to friend.full_name 'friends.show' friend}}
     </li>
   {{/each}}
 </ul>
