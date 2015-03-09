@@ -13,7 +13,7 @@ export default Ember.Route.extend({
     delete: function(friend) {
       var _this = this;
 
-      // @todo Echo name of friend here. It's not this.get('friend.full_name')?
+      // @todo Echo name of friend here. It's not this.get('friend.fullName')?
 
       if (confirm('Are you sure you want to delete this friend?')) {
         friend.destroyRecord().then(function() {
