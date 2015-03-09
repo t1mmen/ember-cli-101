@@ -4,31 +4,38 @@
   <p>{{model.last_name}}</p>
 </div>
 
-<form {{action "save" on "submit"}}>
+<form {{action "save" on="submit"}}>
+  <h2>{{errorMessage}}</h2>
   <p>
     <label>
       First name
-      {{input value="model.first_name"}}
+      {{input value=model.first_name}}
     </label>
   </p>
   <p>
     <label>
       Last name
-      {{input value="model.last_name"}}
+      {{input value=model.last_name}}
     </label>
   </p>
   <p>
     <label>
       Email
-      {{input type='email' value="model.email"}}
+      {{input type="email" value=model.email}}
     </label>
   </p>
   <p>
     <label>
       Twitter
-      {{input type='text' value="model.twitter"}}
+      {{input value=model.twitter}}
     </label>
   </p>
-  <input type="submit" value="Submit">
+  <p>
+    <label>
+      {{input type="checkbox" name=trusted}}
+      Trusted
+    </label>
+  </p>
+  <button type="submit">Submit</button>
   <button {{action "cancel"}}>Cancel</button>
 </form>
