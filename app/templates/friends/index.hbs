@@ -1,0 +1,11 @@
+<h1>Friends Index</h1>
+
+{{#link-to 'friends.new'}}New friend{{/link-to}}
+
+<ul>
+  {{#each friend in model}}
+    <li>{{friend.id}} {{friend.first_name}} {{friend.last_name}}</li>
+  {{/each}}
+</ul>
+
+{{model.length}} friends.
