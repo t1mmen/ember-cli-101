@@ -9,7 +9,20 @@ export default Ember.Route.extend({
     cancel: function() {
       console.log('+--- cancel action bubbled to friends route');
       return true;
+    },
+    delete: function(friend) {
+      var _this = this;
+
+      // @todo Echo name of friend here. It's not this.get('friend.full_name')?
+
+      if (confirm('Are you sure you want to delete this friend?')) {
+        friend.destroyRecord().then(function() {
+          _this.transitionTo('friends.index'); // transitionToRoute if we were in controller
+        });
+      }
+      return false;
     }
+
 
   }
 });
