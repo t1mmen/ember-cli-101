@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
   model: function() {
-    this.store.createRecord('friend');
+    return this.store.createRecord('friend');
   },
   actions: {
     save: function() {
