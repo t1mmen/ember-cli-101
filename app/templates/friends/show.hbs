@@ -6,6 +6,7 @@
   <p>Twitter: {{model.twitter}}</p>
 </div>
 
+{{link-to 'Lend to friend' 'articles.new' model class="button"}}
 {{link-to 'Edit friend' 'friends.edit' model class="button"}}
 <a href="#" class="button error" {{action "delete" model}}>Delete friend</a>
 
