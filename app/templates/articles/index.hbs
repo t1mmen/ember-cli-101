@@ -4,14 +4,12 @@
       <th>Description</th>
       <th>Note</th>
       <th>Borrowed since</th>
-      <th></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
   <tbody>
     {{#each model as |article|}}
-
-        {{'articles/article-row' article=article save='save' articleState=possibleStates}}
-
+        {{'articles/article-row' article=article save='save' articleStates=possibleStates}}
     {{/each}}
   </tbody>
 </table>
