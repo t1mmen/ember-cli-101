@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   hasDescription: Ember.computed.notEmpty('model.description'),
-  hasNote: Ember.computed.notEmpty('model.note'),
+  hasNotes: Ember.computed.notEmpty('model.notes'),
   hasState: Ember.computed.notEmpty('model.state'), // Should be set by model default, including it to see that it validates
-  isValid: Ember.computed.and('hasDescription', 'hasNote', 'hasState'),
+  isValid: Ember.computed.and('hasDescription', 'hasNotes', 'hasState'),
   // implement action:save here JUST to check validation:
   actions: {
     save: function() {
