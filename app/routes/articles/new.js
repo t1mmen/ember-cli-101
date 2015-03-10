@@ -17,7 +17,7 @@ export default Ember.Route.extend({
       });
     },
     cancel: function() {
-      this.transitionTo('article');
+      this.transitionTo('articles');
     }
   }
 });
