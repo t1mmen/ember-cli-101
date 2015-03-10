@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model: function() {
     return this.store.createRecord('article', {
-      state: 'borrowed',
+      // state: 'borrowed', // see default value in models/article.js's state definition
       friend: this.modelFor('friends/show')
     });
   },

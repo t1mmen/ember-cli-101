@@ -7,11 +7,10 @@
     </tr>
   </thead>
   <tbody>
-    {{#each article in model}}
-    <tr>
-      <td>{{article.description}}</td>
-      <td>{{article.createdAt}}</td>
-    </tr>
+    {{#each model as |article|}}
+
+        {{'articles/article-row' article=article save='save' articleState=possibleStates}}
+
     {{/each}}
   </tbody>
 </table>
