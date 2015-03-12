@@ -17,6 +17,8 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/momentjs/moment.js');
+
 app.import('bower_components/picnic/releases/v2.min.css');
 
 app.import('vendor/fontello/fontello.css');
