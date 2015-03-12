@@ -17,6 +17,22 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+
+// @note The exports stuff below wasn't needed, but added ref book loc 59%
+// outdates, as we went back to ember-cli version.
+// app.import('bower_components/ic-ajax/dist/named-amd/main.js', {
+//   exports: {
+//     'ic-ajax' : [
+//       'default',
+//       'defaultFixture',
+//       'lookupFixture',
+//       'raw',
+//       'request'
+//     ]
+//   }
+// });
+
+
 app.import('bower_components/momentjs/moment.js');
 
 app.import('bower_components/picnic/releases/v2.min.css');

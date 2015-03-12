@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import { formatDate } from '../utils/date-helpers';
 
-export function formattedDate(params, hash) {
+export function formattedDate(params) {
 
   if (params.length !== 2) {
     return 'Invalid params format';
