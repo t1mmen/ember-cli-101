@@ -34,6 +34,7 @@
     "ember-export-application-global": "^1.0.2"
   },
   "dependencies": {
-    "ember-cli-divshot": "^0.1.7"
+    "ember-cli-divshot": "^0.1.7",
+    "ember-cli-fill-murray-t1mmen": "^0.1.2"
   }
 }

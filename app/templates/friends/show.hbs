@@ -1,9 +1,14 @@
-<div class="friend-profile">
-  <p>Full name: {{model.fullName}}</p>
-  <p>First name: {{model.firstName}}</p>
-  <p>Last name: {{model.lastName}}</p>
-  <p>Email: {{model.email}}</p>
-  <p>Twitter: {{model.twitter}}</p>
+<div class="friend-profile" class="row">
+  <div class="friend-info full">
+    {{fill-murray width='300' height='300'}}
+    <div>
+      <p>Full name: {{model.fullName}}</p>
+      <p>First name: {{model.firstName}}</p>
+      <p>Last name: {{model.lastName}}</p>
+      <p>Email: {{model.email}}</p>
+      <p>Twitter: {{model.twitter}}</p>
+    </div>
+  </div>
 </div>
 
 {{link-to 'Lend to friend' 'articles.new' model class="button"}}
